@@ -1,0 +1,60 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "df-Servicenow"
+		},
+		"LS_ADLSGEN2_accountKey": {
+			"value": ""
+		},
+		"LS_ASD_Logcapturing_password": {
+			"value": ""
+		},
+		"LS_AzureSQL_password": {
+			"value": ""
+		},
+		"LS_ServicenowV2_password": {
+			"value": ""
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://KV-ServiceNowRestAPI.vault.azure.net/"
+		},
+		"LS_ADLSGEN2_properties_typeProperties_url": {
+			"value": "https://stdservicenow.dfs.core.windows.net/"
+		},
+		"LS_ASD_Logcapturing_properties_typeProperties_server": {
+			"value": "servicenowazuresql.database.windows.net"
+		},
+		"LS_ASD_Logcapturing_properties_typeProperties_database": {
+			"value": "Servicenowdb"
+		},
+		"LS_ASD_Logcapturing_properties_typeProperties_userName": {
+			"value": "servicenowadmin"
+		},
+		"LS_AzureSQL_properties_typeProperties_server": {
+			"value": "servicenowazuresql.database.windows.net"
+		},
+		"LS_AzureSQL_properties_typeProperties_database": {
+			"value": "Servicenowdb"
+		},
+		"LS_AzureSQL_properties_typeProperties_userName": {
+			"value": "servicenowadmin"
+		},
+		"LS_ServiceNowRestAPI_properties_typeProperties_url": {
+			"value": "https://dev281384.service-now.com"
+		},
+		"LS_ServiceNowRestAPI_properties_typeProperties_userName": {
+			"value": "admin"
+		},
+		"LS_ServicenowV2_properties_typeProperties_endpoint": {
+			"value": "https://dev281384.service-now.com"
+		},
+		"LS_ServicenowV2_properties_typeProperties_username": {
+			"value": "admin"
+		},
+		"Event_Trigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/7eee2e8b-6da2-423e-8be0-e242dc5e4773/resourceGroups/rg-test/providers/Microsoft.Storage/storageAccounts/stdservicenow"
+		}
+	}
+}
