@@ -1,0 +1,27 @@
+{
+	"name": "DS_ServiceNowAPI_SNK",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLSGEN2",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ServiceNowAPI"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@concat('file2_',convertTimeZone(utcNow(), 'UTC', 'India Standard Time'),'.json')",
+					"type": "Expression"
+				},
+				"folderPath": "Incidents",
+				"fileSystem": "bronze"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

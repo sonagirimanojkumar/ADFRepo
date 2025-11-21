@@ -1,0 +1,72 @@
+{
+	"name": "PL_Folderfile_count",
+	"properties": {
+		"activities": [
+			{
+				"name": "Get_files",
+				"type": "GetMetadata",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "DS_Gen2_filecount_SRC",
+						"type": "DatasetReference"
+					},
+					"fieldList": [
+						"childItems"
+					],
+					"storeSettings": {
+						"type": "AzureBlobFSReadSettings",
+						"recursive": true,
+						"enablePartitionDiscovery": false
+					},
+					"formatSettings": {
+						"type": "DelimitedTextReadSettings"
+					}
+				}
+			},
+			{
+				"name": "SV_FolderfileCount",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "Get_files",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "filecount",
+					"value": {
+						"value": "@length(activity('Get_files').output.childItems)",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"variables": {
+			"filecount": {
+				"type": "Integer"
+			}
+		},
+		"folder": {
+			"name": "Folder File Count"
+		},
+		"annotations": [],
+		"lastPublishTime": "2025-11-01T15:19:21Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

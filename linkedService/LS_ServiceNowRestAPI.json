@@ -1,0 +1,23 @@
+{
+	"name": "LS_ServiceNowRestAPI",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://dev281384.service-now.com",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Basic",
+			"userName": "admin",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "ServiceNowPSWD",
+				"secretVersion": "343ca9be9c97449aa828fa8ca6e1612c"
+			}
+		}
+	}
+}

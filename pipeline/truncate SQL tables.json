@@ -1,0 +1,39 @@
+{
+	"name": "truncate SQL tables",
+	"properties": {
+		"activities": [
+			{
+				"name": "Script1",
+				"type": "Script",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"linkedServiceName": {
+					"referenceName": "LS_AzureSQL",
+					"type": "LinkedServiceReference"
+				},
+				"typeProperties": {
+					"scripts": [
+						{
+							"type": "Query",
+							"text": "truncate table [dbo].[ServiceNow_JSON_Stage]\n\ntruncate table [dbo].[ServiceNow_FlatData_Pivot]"
+						}
+					],
+					"scriptBlockExecutionTimeout": "02:00:00"
+				}
+			}
+		],
+		"folder": {
+			"name": "Actual development"
+		},
+		"annotations": [],
+		"lastPublishTime": "2025-10-31T01:00:49Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

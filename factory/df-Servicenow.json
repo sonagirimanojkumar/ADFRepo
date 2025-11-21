@@ -1,0 +1,9 @@
+{
+	"name": "df-Servicenow",
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "04151cfd-42a9-4e98-af23-f1240e2254c5",
+		"tenantId": "f744877b-156f-4767-aa8e-29ebed486603"
+	}
+}

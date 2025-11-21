@@ -1,0 +1,397 @@
+{
+	"name": "DS_Servicenow_SRC",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ServicenowV2",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ServiceNow"
+		},
+		"annotations": [],
+		"type": "ServiceNowV2Object",
+		"schema": [
+			{
+				"name": "parent_incident",
+				"type": "string"
+			},
+			{
+				"name": "child_incidents",
+				"type": "string"
+			},
+			{
+				"name": "delivery_task",
+				"type": "string"
+			},
+			{
+				"name": "upon_reject",
+				"type": "string"
+			},
+			{
+				"name": "work_start",
+				"type": "string"
+			},
+			{
+				"name": "cause",
+				"type": "string"
+			},
+			{
+				"name": "resolved_by",
+				"type": "string"
+			},
+			{
+				"name": "rejection_goto",
+				"type": "string"
+			},
+			{
+				"name": "expected_start",
+				"type": "string"
+			},
+			{
+				"name": "severity",
+				"type": "string"
+			},
+			{
+				"name": "category",
+				"type": "string"
+			},
+			{
+				"name": "origin_id",
+				"type": "string"
+			},
+			{
+				"name": "business_service",
+				"type": "string"
+			},
+			{
+				"name": "notify",
+				"type": "string"
+			},
+			{
+				"name": "reopened_by",
+				"type": "string"
+			},
+			{
+				"name": "caused_by",
+				"type": "string"
+			},
+			{
+				"name": "business_stc",
+				"type": "string"
+			},
+			{
+				"name": "approval_history",
+				"type": "string"
+			},
+			{
+				"name": "location",
+				"type": "string"
+			},
+			{
+				"name": "sys_updated_on",
+				"type": "string"
+			},
+			{
+				"name": "service_offering",
+				"type": "string"
+			},
+			{
+				"name": "urgency",
+				"type": "string"
+			},
+			{
+				"name": "watch_list",
+				"type": "string"
+			},
+			{
+				"name": "cmdb_ci",
+				"type": "string"
+			},
+			{
+				"name": "business_duration",
+				"type": "string"
+			},
+			{
+				"name": "user_input",
+				"type": "string"
+			},
+			{
+				"name": "active",
+				"type": "string"
+			},
+			{
+				"name": "comments",
+				"type": "string"
+			},
+			{
+				"name": "opened_at",
+				"type": "string"
+			},
+			{
+				"name": "sla_due",
+				"type": "string"
+			},
+			{
+				"name": "route_reason",
+				"type": "string"
+			},
+			{
+				"name": "reopen_count",
+				"type": "string"
+			},
+			{
+				"name": "universal_request",
+				"type": "string"
+			},
+			{
+				"name": "hold_reason",
+				"type": "string"
+			},
+			{
+				"name": "wf_activity",
+				"type": "string"
+			},
+			{
+				"name": "resolved_at",
+				"type": "string"
+			},
+			{
+				"name": "sys_id",
+				"type": "string"
+			},
+			{
+				"name": "sys_domain_path",
+				"type": "string"
+			},
+			{
+				"name": "approval",
+				"type": "string"
+			},
+			{
+				"name": "knowledge",
+				"type": "string"
+			},
+			{
+				"name": "sys_updated_by",
+				"type": "string"
+			},
+			{
+				"name": "priority",
+				"type": "string"
+			},
+			{
+				"name": "reassignment_count",
+				"type": "string"
+			},
+			{
+				"name": "order",
+				"type": "string"
+			},
+			{
+				"name": "assignment_group",
+				"type": "string"
+			},
+			{
+				"name": "calendar_duration",
+				"type": "string"
+			},
+			{
+				"name": "correlation_display",
+				"type": "string"
+			},
+			{
+				"name": "short_description",
+				"type": "string"
+			},
+			{
+				"name": "parent",
+				"type": "string"
+			},
+			{
+				"name": "close_notes",
+				"type": "string"
+			},
+			{
+				"name": "due_date",
+				"type": "string"
+			},
+			{
+				"name": "sys_mod_count",
+				"type": "string"
+			},
+			{
+				"name": "comments_and_work_notes",
+				"type": "string"
+			},
+			{
+				"name": "work_notes_list",
+				"type": "string"
+			},
+			{
+				"name": "contract",
+				"type": "string"
+			},
+			{
+				"name": "delivery_plan",
+				"type": "string"
+			},
+			{
+				"name": "business_impact",
+				"type": "string"
+			},
+			{
+				"name": "upon_approval",
+				"type": "string"
+			},
+			{
+				"name": "close_code",
+				"type": "string"
+			},
+			{
+				"name": "work_end",
+				"type": "string"
+			},
+			{
+				"name": "subcategory",
+				"type": "string"
+			},
+			{
+				"name": "incident_state",
+				"type": "string"
+			},
+			{
+				"name": "origin_table",
+				"type": "string"
+			},
+			{
+				"name": "caller_id",
+				"type": "string"
+			},
+			{
+				"name": "reopened_time",
+				"type": "string"
+			},
+			{
+				"name": "rfc",
+				"type": "string"
+			},
+			{
+				"name": "calendar_stc",
+				"type": "string"
+			},
+			{
+				"name": "escalation",
+				"type": "string"
+			},
+			{
+				"name": "additional_assignee_list",
+				"type": "string"
+			},
+			{
+				"name": "state",
+				"type": "string"
+			},
+			{
+				"name": "closed_by",
+				"type": "string"
+			},
+			{
+				"name": "sys_domain",
+				"type": "string"
+			},
+			{
+				"name": "assigned_to",
+				"type": "string"
+			},
+			{
+				"name": "time_worked",
+				"type": "string"
+			},
+			{
+				"name": "correlation_id",
+				"type": "string"
+			},
+			{
+				"name": "variables",
+				"type": "string"
+			},
+			{
+				"name": "number",
+				"type": "string"
+			},
+			{
+				"name": "work_notes",
+				"type": "string"
+			},
+			{
+				"name": "follow_up",
+				"type": "string"
+			},
+			{
+				"name": "sys_created_on",
+				"type": "string"
+			},
+			{
+				"name": "task_effective_number",
+				"type": "string"
+			},
+			{
+				"name": "problem_id",
+				"type": "string"
+			},
+			{
+				"name": "impact",
+				"type": "string"
+			},
+			{
+				"name": "group_list",
+				"type": "string"
+			},
+			{
+				"name": "company",
+				"type": "string"
+			},
+			{
+				"name": "opened_by",
+				"type": "string"
+			},
+			{
+				"name": "made_sla",
+				"type": "string"
+			},
+			{
+				"name": "sys_class_name",
+				"type": "string"
+			},
+			{
+				"name": "description",
+				"type": "string"
+			},
+			{
+				"name": "closed_at",
+				"type": "string"
+			},
+			{
+				"name": "activity_due",
+				"type": "string"
+			},
+			{
+				"name": "approval_set",
+				"type": "string"
+			},
+			{
+				"name": "contact_type",
+				"type": "string"
+			},
+			{
+				"name": "sys_created_by",
+				"type": "string"
+			}
+		],
+		"typeProperties": {
+			"tableName": "incident",
+			"valueType": "display"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

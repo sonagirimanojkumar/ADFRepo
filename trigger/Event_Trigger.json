@@ -1,0 +1,25 @@
+{
+	"name": "Event_Trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_StorageEventTrigger_Run",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/eventtrigger/blobs/configfile",
+			"blobPathEndsWith": "configfile.csv",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/7eee2e8b-6da2-423e-8be0-e242dc5e4773/resourceGroups/rg-test/providers/Microsoft.Storage/storageAccounts/stdservicenow",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"name": "DS_Azuresql_Json_flatten_SNK",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AzureSQL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Stage_Incident"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

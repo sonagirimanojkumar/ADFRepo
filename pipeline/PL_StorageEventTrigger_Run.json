@@ -1,0 +1,22 @@
+{
+	"name": "PL_StorageEventTrigger_Run",
+	"properties": {
+		"activities": [
+			{
+				"name": "Event Trigger check",
+				"type": "Wait",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 5
+				}
+			}
+		],
+		"folder": {
+			"name": "Storage Event Pipeline Trigger"
+		},
+		"annotations": [],
+		"lastPublishTime": "2025-11-01T15:26:53Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

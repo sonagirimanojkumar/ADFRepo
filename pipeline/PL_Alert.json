@@ -1,0 +1,32 @@
+{
+	"name": "PL_Alert",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "Test",
+					"value": {
+						"value": "Hi",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"variables": {
+			"Test": {
+				"type": "Integer"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2025-11-18T15:37:43Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

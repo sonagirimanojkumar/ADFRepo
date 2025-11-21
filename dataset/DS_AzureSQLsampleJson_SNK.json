@@ -1,0 +1,27 @@
+{
+	"name": "DS_AzureSQLsampleJson_SNK",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AzureSQL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "json_text",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ServiceNow_JSON_Stage"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
